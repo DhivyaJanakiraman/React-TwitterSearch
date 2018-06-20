@@ -1,0 +1,48 @@
+.wrapper {
+  width: 65%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 50px auto;
+  border-radius: 3px;
+}
+
+.search-container {
+  position: relative;
+  text-align: center;
+  padding-top: 8px;
+  margin: 10px auto;
+}
+.searchBox {
+  width: 65%;
+  border-radius: 3px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.searchBtn {
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.sortBox-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sortBox-container .sortBox1,
+.sortBox2 {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  margin-left: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
