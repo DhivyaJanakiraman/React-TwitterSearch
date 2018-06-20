@@ -81,8 +81,8 @@ A nice wavy green background with varying texture and contrast from left to righ
 
 Open Issue
 ===========
-The application is perfectly functional and it retrieves tweets, calculates number of comments per tweet correctly. A lot of testing has been conducted to verify that no-refetching happens when only sort criteria or number of tweets needed is adjusted. H
-owever, there is only one slight issue that occurs randomly which is hardly noticeable is that if the user intends sort by num comments per tweet at time of new search input will not render num comments per tweet immediately. The user has to click comments again to get the right sorting. This is happening, I believe due to a race condition on the set of array values passed between App and Display after DataFetcher has returned the tweets. One potential fix might be to move the componentWillReceiveProps code to getDerivedStateFromProps to be more deterministic which we can use then to trigger the render in Display component. 
+The application is perfectly functional and it retrieves tweets, calculates number of comments per tweet correctly. A lot of testing has been conducted to verify that no-refetching happens when only sort criteria or number of tweets needed is adjusted. 
+However, there is only one slight issue that occurs randomly which is hardly noticeable is that if the user intends sort by num comments per tweet at time of new search input will not render num comments per tweet immediately. The user has to click comments again to get the right sorting. This is happening, I believe due to a race condition on the set of array values passed between App and Display after DataFetcher has returned the tweets. One potential fix might be to move the componentWillReceiveProps code to getDerivedStateFromProps to be more deterministic which we can use then to trigger the render in Display component. 
 
 
 
