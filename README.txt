@@ -70,6 +70,7 @@ Directory Structure
         -->keys_dev.js --> Code development TwitterAPI keys and tokens (can't publish on GitHub)
         -->keys_prod.js --> Code production TwitterAPI keys and tokens (can't publish on GitHub)
         -->keys.js --> selects either dev or prod based on ENV variables
+  server.js --> Node.js server code that performs the HTTP requests to the TwitterAPI upon the fetch calls from DataFetcher component
 
 UI Design Approach:
 ===================
