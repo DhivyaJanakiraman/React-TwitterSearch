@@ -84,5 +84,10 @@ Open Issue
 The application is perfectly functional and it retrieves tweets, calculates number of comments per tweet correctly. A lot of testing has been conducted to verify that no-refetching happens when only sort criteria or number of tweets needed is adjusted. 
 However, there is only one slight issue that occurs randomly which is hardly noticeable is that if the user intends sort by num comments per tweet at time of new search input will not render num comments per tweet immediately. The user has to click comments again to get the right sorting. This is happening, I believe due to a race condition on the set of array values passed between App and Display after DataFetcher has returned the tweets. One potential fix might be to move the componentWillReceiveProps code to getDerivedStateFromProps to be more deterministic which we can use then to trigger the render in Display component. 
 
+Notes:
+======
+
+Please note that the TwitterAPI keys have been hidden in this repo and hence, if you try to run the application from downloading the application from GitHub, it will not run. The source code has been published to detail out the implementations of my design. Please open the Heroku link provided above to view the app in real-time. 
+
 
 
